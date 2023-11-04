@@ -31,7 +31,7 @@ class App extends React.Component {
       );
       const fetchArr = fetch.hits;
 
-      console.log(Math.floor(fetch.totalHits / this.state.per_page));
+      //  console.log(Math.floor(fetch.totalHits / this.state.per_page));
       this.setState(prev => ({
         dataArr: [...prev.dataArr, ...fetchArr],
         maxPages: Math.floor(fetch.totalHits / this.state.per_page),
